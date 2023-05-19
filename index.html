@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>wharton momer</title>
+    </head>
+    <body>
+        <script>
+          function create(h) {
+              var urlinp = document.getElementById("urlinp")
+              if (h !== null) {
+                var url = h
+              } else {
+                var url = urlinp.value
+              }
+              var win = window.open();
+              win.document.body.style.margin = '0';
+              win.document.body.style.height = '100vh';
+              var iframe = win.document.createElement('iframe');
+              var title = win.document.createElement('title')
+              iframe.style.border = 'none';
+              iframe.width = '100%';
+              iframe.height = '100%';
+              iframe.style.margin = '0';
+              iframe.src = url;
+              win.document.body.appendChild(iframe);
+          }
+        </script>
+        <button value="https://shungabunga.playcode.io/" onclick="create(null)">custom link</button>
+        <input width="70p" type="url" id="urlinp">
+        <br><br><br>
+        <button onclick="create('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/r3tq6l1/to9d2if8dv@2247e549da02c36db71b10c56f4c1e713ae5b7a5/zjt64geg/idle-breakout.xml')">idle breakout</button>
+        <br><br>
+        <button onclick="create('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fjacksmith.xml')">jacksmith</button>
+        <br><br>
+        <button onclick="create('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/fr6ks8ab/vi9syd1rm@f0981e94dcc7836acb298d369a6e65391b802904/d65uds32/SnowRider3D.xml')">snow rider 3d</button>
+        <br><br>
+        <button onclick="create('https://scratch.mit.edu/projects/389464290/embed/')">getting over it</button>
+        <br><br>
+        <button onclick="create('https://blackboro.github.io/cannon-basketball-4/')">cannon basketball 4</button>
+        <br><br>
+        <button onclick="create('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fthe-world-s-hardest-game.xml')">world's hardest game</button>
+        <br><br>
+        <button onclick="create('https://www-sites-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/group/alskfhaskfhalskfhasklfjhaklhfwakl--asd-asd-aw-dasdas-dva-45-45d/attach/381a28083a967/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc_3-slices.xml?part=0.1&view=1;%20frameborder=')">3 slices</button>
+        <br><br>
+        <button onclick="create('https://dm-unbl0cker-ultraviolet.onrender.com/')">unblocker!</button>
+    </body>
+</html>
