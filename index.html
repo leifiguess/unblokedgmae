@@ -5,6 +5,17 @@
     </head>
     <body>
         <script>
+           
+           function inIframe () {
+                try {
+                    return window.self !== window.top;
+                } catch (e) {
+                    return true;
+                }
+            }
+            
+            alert(inIframe())
+            
           function create(h) {
               var urlinp = document.getElementById("urlinp")
               if (h !== null) {
