@@ -14,7 +14,9 @@
                 }
             }
             
-            alert(inIframe())
+            if (inIframe() == true) {
+                document.getElementsByTagName('html')[0].innerHTML = "<marquee>nope.</marquee>"
+            }
             
           function create(h) {
               var urlinp = document.getElementById("urlinp")
