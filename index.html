@@ -20,10 +20,14 @@
             
           function create(h) {
               var urlinp = document.getElementById("urlinp")
+              var nopen = document.getElementById("nopen").value
               if (h !== null) {
                 var url = h
               } else {
                 var url = urlinp.value
+              }
+              if (nopen == true) {
+                  
               }
               var win = window.open();
               win.document.body.style.margin = '0';
@@ -40,6 +44,8 @@
         </script>
         <button onclick="create(null)">custom link</button>
         <input width="70p" type="url" id="urlinp">
+        <br><br>
+        <input type="checkbox" id="nopen">
         <br><br><br>
         <button onclick="create('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/r3tq6l1/to9d2if8dv@2247e549da02c36db71b10c56f4c1e713ae5b7a5/zjt64geg/idle-breakout.xml')">idle breakout</button>
         <br><br>
