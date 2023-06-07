@@ -28,12 +28,10 @@
               }
               if (nopen == true) {
                   var win = window
-                  alert("TRUE")
               } else {
                   var win = window.open();
-                  alert("FALSE")
               }
-              alert("WHAR")
+              alert(nopen)
               win.document.body.style.margin = '0';
               win.document.body.style.height = '100vh';
               var iframe = win.document.createElement('iframe');
