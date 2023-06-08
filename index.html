@@ -32,7 +32,6 @@
               } else {
                   var win = window.open();
               }
-              alert(nopen)
               win.document.body.style.margin = '0';
               win.document.body.style.height = '100vh';
               var iframe = win.document.createElement('iframe');
@@ -48,6 +47,7 @@
         <button onclick="create(null)">custom link</button>
         <input width="70p" type="url" id="urlinp">
         <br><br>
+        <p>open in this tab</p>
         <input type="checkbox" id="nopen">
         <br><br><br>
         <button onclick="create('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/r3tq6l1/to9d2if8dv@2247e549da02c36db71b10c56f4c1e713ae5b7a5/zjt64geg/idle-breakout.xml')">idle breakout</button>
@@ -92,6 +92,6 @@
         <!--<br><br>
         <button onclick="create('')">game</button> -->
         
-        <h5>Version: 0.2.0.5</h5>
+        <h5>Version: 0.2.0.6</h5>
     </body>
 </html>
