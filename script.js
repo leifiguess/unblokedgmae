@@ -7,7 +7,8 @@ function inIframe() {
 }
 
 if (inIframe() == false) {
-    document.getElementsByTagName('html')[0].innerHTML = "<br><br><br><br><br><marquee>nope.</marquee>"
+    alert("nope")
+    document.getElementsByTagName('body')[0].innerHTML = "<br><br><br><br><br><marquee>nope.</marquee>"
 }
 
 function create(h) {
