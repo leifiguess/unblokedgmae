@@ -1,57 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" src="./styles.css">
-        <script>
-            function inIframe() {
-    try {
-        return window.self !== window.top;
-    } catch (e) {
-        return true;
-    }
-}
-
-if (inIframe() == false) {
-    alert("nope")
-    document.getElementsByTagName('body')[0].innerHTML = "<br><br><br><br><br><marquee>nope.</marquee>"
-}
-
-function create(h) {
-    var urlinp = document.getElementById("urlinp")
-    var nopen = document.getElementById("nopen").checked
-    if (h !== null) {
-        var url = h
-    } else {
-        var url = urlinp.value
-    }
-    if (nopen == true) {
-        var win = window
-        document.getElementsByTagName('html')[0].innerHTML = ""
-    } else {
-        var win = window.open();
-    }
-    win.document.body.style.margin = '0';
-    win.document.body.style.height = '100vh';
-    var iframe = win.document.createElement('iframe');
-    var title = win.document.createElement('title')
-    iframe.style.border = 'none';
-    iframe.width = '100%';
-    iframe.height = '100%';
-    iframe.style.margin = '0';
-    iframe.src = url;
-    win.document.body.appendChild(iframe);
-}
-        </script>
-    </head>
     <body>
+        <script>
+           
+           function inIframe () {
+                try {
+                    return window.self !== window.top;
+                } catch (e) {
+                    return true;
+                }
+            }
+            
+            if (inIframe() == false) {
+                document.getElementsByTagName('html')[0].innerHTML = "<br><br><br><br><br><marquee>nope.</marquee>"
+            }
+            
+          function create(h) {
+              var urlinp = document.getElementById("urlinp")
+              var nopen = document.getElementById("nopen").checked
+              if (h !== null) {
+                var url = h
+              } else {
+                var url = urlinp.value
+              }
+              if (nopen == true) {
+                  var win = window
+                  document.getElementsByTagName('html')[0].innerHTML = ""
+              } else {
+                  var win = window.open();
+              }
+              win.document.body.style.margin = '0';
+              win.document.body.style.height = '100vh';
+              var iframe = win.document.createElement('iframe');
+              var title = win.document.createElement('title')
+              iframe.style.border = 'none';
+              iframe.width = '100%';
+              iframe.height = '100%';
+              iframe.style.margin = '0';
+              iframe.src = url;
+              win.document.body.appendChild(iframe);
+          }
+        </script>
         <button onclick="create(null)">custom link</button>
         <input width="70p" type="url" id="urlinp">
         <br><br>
         <p>open in this tab</p>
         <input type="checkbox" id="nopen">
         <br><br><br>
-        <input type="text" id="searchbar" placeholder="search">
-        <br><br>
         <button onclick="create('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/r3tq6l1/to9d2if8dv@2247e549da02c36db71b10c56f4c1e713ae5b7a5/zjt64geg/idle-breakout.xml')">idle breakout</button>
         <br><br>
         <button onclick="create('https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fjacksmith.xml')">jacksmith</button>
@@ -107,8 +102,10 @@ function create(h) {
         <button onclick="create('')">game</button> -->
         
         <br><br>
+        <a download="./CookieClicker.zip">cookie cliker newer version (download zip)</a>
+        <br><br>
         
-        <h5>Version: 2.4.3</h5>
-        <h5>the fog removal update</h5>
+        <h5>Version: 2.3.5</h5>
+        <h5>The Caves And Cliffs Update</h5>
     </body>
 </html>
